@@ -1,0 +1,22 @@
+.contact {
+  background-color: #f0ad4e;
+  height: 550px;
+}
+
+.contactHeader {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 43px;
+  letter-spacing: 0.396px;
+  color: #2d2d2d;
+}
+
+#exampleFormControlTextarea1 {
+  height: 200px;
+}
+
+.footerCopy {
+  margin-top: 9%;
+}

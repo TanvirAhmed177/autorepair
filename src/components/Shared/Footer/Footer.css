@@ -1,0 +1,12 @@
+.footer {
+  overflow: hidden;
+  background: #252525;
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: gray;
+}
+.ftco-section {
+  padding: 7em 0;
+  position: relative;
+}
