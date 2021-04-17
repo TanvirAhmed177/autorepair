@@ -21,14 +21,14 @@ const Checkout = () => {
   const { price } = services;
 
   useEffect(() => {
-    fetch("http://localhost:5000/services/" + name)
+    fetch("https://arcane-brook-94372.herokuapp.com/services/" + name)
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, [name]);
 
   const handleOrder = (paymentId) => {
     const newOrder = { ...services, ...loggedInUser, date, paymentId };
-    fetch("http://localhost:5000/addOrders", {
+    fetch("https://arcane-brook-94372.herokuapp.com/addOrders", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newOrder),

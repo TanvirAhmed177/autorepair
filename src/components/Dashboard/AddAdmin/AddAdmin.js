@@ -14,7 +14,7 @@ const AddAdmin = () => {
       name: data.name,
       email: data.email,
     };
-    fetch("http://localhost:5000/addAdmin", {
+    fetch("https://arcane-brook-94372.herokuapp.com/addAdmin", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(adminData),

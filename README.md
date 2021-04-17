@@ -1,9 +1,8 @@
 ## Autorepair
 
-### https://cybershop-project.web.app/
+### https://autorepair-e6808.web.app/
 
-This project deals with the online electronic store to buy some good products easily from home with your secure online payment option.
-Here, I used ReactJs ,React-Router, Firebase, MongoDB, Express.js and React-Bootstrap.
+This project deals with some car repairing services with secure online payment option.
+Here, I used ReactJs ,React-Router, Firebase, MongoDB, Express.js, React Stripe.js and React-Bootstrap.
 
-# full-stack-client-TanvirAhmed177
 # complete-website-client-TanvirAhmed177
