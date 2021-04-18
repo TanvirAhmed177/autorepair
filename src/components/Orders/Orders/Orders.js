@@ -42,11 +42,7 @@ const Orders = () => {
                   <span>Orders</span>
                 </Link>
               </li>
-              <li>
-                <Link to="/addReviews" className="text-white">
-                  <FontAwesomeIcon icon={faComment} /> <span>Add Reviews</span>
-                </Link>
-              </li>
+
               <li>
                 <Link to="/" className="text-white">
                   <FontAwesomeIcon icon={faHome} /> <span>Home</span>

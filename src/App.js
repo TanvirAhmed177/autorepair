@@ -23,7 +23,7 @@ function App() {
       <Router>
         <Switch>
           <PrivateRoute path="/dashboard">
-            <Dashboard></Dashboard>
+            <AddReview></AddReview>
           </PrivateRoute>
 
           <PrivateRoute path="/checkout/:name">
@@ -50,8 +50,9 @@ function App() {
           <Route path="/manage">
             <ManageService></ManageService>
           </Route>
-          <Route path="/addReviews">
-            <AddReview></AddReview>
+
+          <Route path="/adminDashboard">
+            <Dashboard></Dashboard>
           </Route>
           <Route path="*">
             <NoMatch></NoMatch>

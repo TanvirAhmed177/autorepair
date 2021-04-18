@@ -1,14 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
-import "../../Dashboard/Sidebar/Sidebar.css";
-import {
-  faSignOutAlt,
-  faHome,
-  faGripHorizontal,
-  faComment,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import Sidebar from "../../Dashboard/Sidebar/Sidebar";
 
 const containerStyle = {
   border: "1px solid red",
@@ -39,34 +32,7 @@ const AddReview = () => {
     <section>
       <div style={containerStyle} className="row">
         <div className="col-md-2 col-sm-6 col-12">
-          <div
-            className="sidebar d-flex flex-column justify-content-between col-md-2 py-5 px-4"
-            style={{ height: "100vh" }}
-          >
-            <ul className="list-unstyled">
-              <li>
-                <Link to="/orders" className="text-white">
-                  <FontAwesomeIcon icon={faGripHorizontal} />{" "}
-                  <span>Orders</span>
-                </Link>
-              </li>
-              <li>
-                <Link to="/addReviews" className="text-white">
-                  <FontAwesomeIcon icon={faComment} /> <span>Add Reviews</span>
-                </Link>
-              </li>
-              <li>
-                <Link to="/" className="text-white">
-                  <FontAwesomeIcon icon={faHome} /> <span>Home</span>
-                </Link>
-              </li>
-            </ul>
-            <div>
-              <Link to="/" className="text-white">
-                <FontAwesomeIcon icon={faSignOutAlt} /> <span>Logout</span>
-              </Link>
-            </div>
-          </div>
+          <Sidebar></Sidebar>
         </div>
 
         <div className="col-md-3 col-sm-12 col-12 ">

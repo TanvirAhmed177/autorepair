@@ -9,6 +9,7 @@ import {
   faGripHorizontal,
   faUserPlus,
   faPlus,
+  faComment,
 } from "@fortawesome/free-solid-svg-icons";
 import { UserContext } from "../../../App";
 
@@ -33,17 +34,23 @@ const Sidebar = () => {
     >
       <ul className="list-unstyled">
         <li>
-          <Link to="/dashboard" className="text-white">
-            <FontAwesomeIcon icon={faGripHorizontal} /> <span>Dashboard</span>
-          </Link>
-        </li>
-        <li>
+          <li>
+            <Link to="/addReviews" className="text-white">
+              <FontAwesomeIcon icon={faComment} /> <span>Add Reviews</span>
+            </Link>
+          </li>
           <Link to="/" className="text-white">
             <FontAwesomeIcon icon={faHome} /> <span>Home</span>
           </Link>
         </li>
         {isAdmin && (
           <div>
+            <li>
+              <Link to="/adminDashboard" className="text-white">
+                <FontAwesomeIcon icon={faGripHorizontal} />{" "}
+                <span>Dashboard</span>
+              </Link>
+            </li>
             <li>
               <Link to="/addServices" className="text-white">
                 <FontAwesomeIcon icon={faPlus} /> <span>Add Services</span>
