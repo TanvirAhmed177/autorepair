@@ -18,7 +18,7 @@ const OrderDetail = ({ order }) => {
     )
       .then((res) => res.json())
       .then((result) => {
-        alert("Successful");
+        alert("Service updated successfully");
       });
   };
   return (
