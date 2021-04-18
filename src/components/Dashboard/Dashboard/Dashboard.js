@@ -1,6 +1,9 @@
 import React, { useContext, useEffect, useState } from "react";
 import { UserContext } from "../../../App";
 import Sidebar from "../../Dashboard/Sidebar/Sidebar";
+import { Button } from "react-bootstrap";
+import { useForm } from "react-hook-form";
+import OrderDetail from "../OrderDetail/OrderDetail";
 
 const containerStyle = {
   border: "1px solid red",
@@ -10,6 +13,7 @@ const Dashboard = () => {
   const [orders, setOrders] = useState([]);
   const [loggedInUser] = useContext(UserContext);
   console.log(loggedInUser.email);
+
   useEffect(() => {
     fetch(
       "https://arcane-brook-94372.herokuapp.com/orders?email=" +
@@ -31,26 +35,9 @@ const Dashboard = () => {
           </h2>
 
           <div className="table-responsive">
-            <table className="table">
-              <thead>
-                <tr>
-                  <th>Date</th>
-                  <th>Service Name</th>
-                  <th>Price</th>
-                  <th>Payment ID</th>
-                </tr>
-              </thead>
-              {orders.map((order) => (
-                <tbody>
-                  <tr>
-                    <td>{order.date}</td>
-                    <td>{order.name}</td>
-                    <td>${order.price}</td>
-                    <td>{order.paymentId}</td>
-                  </tr>
-                </tbody>
-              ))}
-            </table>
+            {orders.map((order) => (
+              <OrderDetail order={order}></OrderDetail>
+            ))}
           </div>
         </div>
       </div>
