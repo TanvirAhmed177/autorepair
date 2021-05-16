@@ -4,10 +4,6 @@ import axios from "axios";
 
 import Sidebar from "../Sidebar/Sidebar";
 
-const containerStyle = {
-  border: "1px solid red",
-};
-
 const AddServices = () => {
   const [imageUrl, setImageUrl] = useState();
   const { handleSubmit, register } = useForm();
@@ -48,12 +44,12 @@ const AddServices = () => {
   };
   return (
     <section>
-      <div style={containerStyle} className="row">
+      <div className="row">
         <div className="col-md-2 col-sm-6 col-12">
           <Sidebar></Sidebar>
         </div>
 
-        <div className="col-md-3 col-sm-12 col-12 ">
+        <div className="col-md-3 col-sm-12 col-12 pl-5">
           <h1 className="contactHeader mt-5 mb-4">
             Add new service to the <br></br> website.
           </h1>

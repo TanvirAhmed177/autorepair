@@ -4,10 +4,6 @@ import Edit from "../../../images/Group 307.png";
 import Delete from "../../../images/Group 33150.png";
 import Sidebar from "../Sidebar/Sidebar";
 
-const containerStyle = {
-  border: "1px solid red",
-};
-
 const ManageService = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
@@ -28,12 +24,12 @@ const ManageService = () => {
   };
   return (
     <section>
-      <div style={containerStyle} className="row">
+      <div className="row">
         <div className="col-md-2 col-sm-6 col-12">
           <Sidebar></Sidebar>
         </div>
 
-        <div className="col-md-10 col-sm-12 col-12 ">
+        <div className="col-md-10 col-sm-12 col-12 pl-5">
           <table className="table">
             <thead>
               <tr>

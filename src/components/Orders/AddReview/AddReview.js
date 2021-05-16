@@ -3,10 +3,6 @@ import { useForm } from "react-hook-form";
 
 import Sidebar from "../../Dashboard/Sidebar/Sidebar";
 
-const containerStyle = {
-  border: "1px solid red",
-};
-
 const AddReview = () => {
   const { handleSubmit, register } = useForm();
 
@@ -30,12 +26,12 @@ const AddReview = () => {
   };
   return (
     <section>
-      <div style={containerStyle} className="row">
+      <div className="row">
         <div className="col-md-2 col-sm-6 col-12">
           <Sidebar></Sidebar>
         </div>
 
-        <div className="col-md-3 col-sm-12 col-12 ">
+        <div className="col-md-3 col-sm-12 col-12 pl-5">
           <h1 className="contactHeader mt-5 mb-4">
             Let us know your <br></br> feedback.
           </h1>

@@ -5,10 +5,6 @@ import { Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import OrderDetail from "../OrderDetail/OrderDetail";
 
-const containerStyle = {
-  border: "1px solid red",
-};
-
 const Dashboard = () => {
   const [orders, setOrders] = useState([]);
   const [loggedInUser] = useContext(UserContext);
@@ -24,12 +20,12 @@ const Dashboard = () => {
   }, [loggedInUser.email]);
   return (
     <section>
-      <div style={containerStyle} className="row">
+      <div className="row">
         <div className="col-md-2 col-sm-6 col-12">
           <Sidebar></Sidebar>
         </div>
 
-        <div className="col-md-10 col-sm-12 col-12 ">
+        <div className="col-md-10 col-sm-12 col-12 pl-5">
           <h2 className="mt-5 text-dark text-center">
             Ordered Services = <b>{orders.length}</b>
           </h2>
