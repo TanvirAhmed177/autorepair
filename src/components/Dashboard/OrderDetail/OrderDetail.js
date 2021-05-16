@@ -53,7 +53,7 @@ const OrderDetail = ({ order }) => {
                 />
                 <input
                   type="submit"
-                  className="btn btn-dark pt-1"
+                  className="btn btn-dark mt-1"
                   value="SET"
                 />
               </form>
