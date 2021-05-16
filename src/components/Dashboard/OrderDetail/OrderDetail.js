@@ -51,7 +51,11 @@ const OrderDetail = ({ order }) => {
                   placeholder="service status"
                   required
                 />
-                <input type="submit" className="btn btn-dark" value="SET" />
+                <input
+                  type="submit"
+                  className="btn btn-dark pt-1"
+                  value="SET"
+                />
               </form>
             </td>
           </tr>
